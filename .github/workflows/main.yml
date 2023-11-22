@@ -17,3 +17,9 @@ jobs:
 # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: continuous
         run: echo 'workflow lancé'
+      - name: intégration
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nginx
+          ls -a
+
